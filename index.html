@@ -1208,67 +1208,66 @@ form.addEventListener(
        WHATSAPP MESSAGE
        ================================================= */
 
-    const waText = [
+const waText = [
 
-      "📋 *Thanks for Contact — Verification*",
+  "*📋 Thanks for Contact — Verification*",
 
-      `Naam: ${name}`,
+  `*Naam: ${name}*`,
 
-      `WhatsApp: ${whatsapp}`,
+  `*WhatsApp: ${whatsapp}*`,
 
-      phonepe
-        ? `PhonePe No: ${phonepe}`
-        : null,
+  phonepe
+    ? `*PhonePe No: ${phonepe}*`
+    : null,
 
-      upiName
-        ? `UPI Name: ${upiName}`
-        : null,
+  upiName
+    ? `*UPI Name: ${upiName}*`
+    : null,
 
-      `Coaching/School: ${coachingName}`,
+  `*Coaching/School: ${coachingName}*`,
 
-      `Address: ${address}`,
+  `*Address: ${address}*`,
 
-      landmark
-        ? `Nearby: ${landmark}`
-        : null,
+  landmark
+    ? `*Nearby: ${landmark}*`
+    : null,
 
-      district
-        ? `District: ${district}`
-        : null,
+  district
+    ? `*District: ${district}*`
+    : null,
 
-      pincode
-        ? `Pincode: ${pincode}`
-        : null,
+  pincode
+    ? `*Pincode: ${pincode}*`
+    : null,
 
-      purchaseDate
-        ? `Purchase Date: ${purchaseDate}`
-        : null,
+  purchaseDate
+    ? `*Purchase Date: ${purchaseDate}*`
+    : null,
 
-      amountPaid
-        ? `Amount Paid: ₹${amountPaid}`
-        : null,
+  amountPaid
+    ? `*Amount Paid: ₹${amountPaid}*`
+    : null,
 
-      `Classes: ${classes.join(", ")}`,
+  `*Classes: ${classes.join(", ")}*`,
 
-      `Purchase Type: ${purchaseType}${
-        purchaseType === "Single/Double Subject" &&
-        subjectName
-          ? " (" + subjectName + ")"
-          : ""
-      }`,
+  `*Purchase Type: ${purchaseType}${
+    purchaseType === "Single/Double Subject" &&
+    subjectName
+      ? " (" + subjectName + ")"
+      : ""
+  }*`,
 
-      teacherSubject
-        ? `Teacher Subject: ${teacherSubject}`
-        : null,
+  teacherSubject
+    ? `*Teacher Subject: ${teacherSubject}*`
+    : null,
 
-      message
-        ? `Message: ${message}`
-        : null
+  message
+    ? `*Message: ${message}*`
+    : null
 
-    ]
-    .filter(Boolean)
-    .join("\n");
-
+]
+.filter(Boolean)
+.join("\n");
 
     /* =================================================
        WHATSAPP URL
